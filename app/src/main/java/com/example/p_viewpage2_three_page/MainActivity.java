@@ -1,5 +1,5 @@
 package com.example.p_viewpage2_three_page;
-
+ //Banner:https://codertw.com/程式語言/714215/
 //1.加入API:
 //ViewPage2
 // implementation 'androidx.viewpager2:viewpager2:1.0.0'
