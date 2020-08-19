@@ -19,6 +19,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -75,8 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         //11.準備一個
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
-        compositePageTransformer.addTransformer(new MarginPageTransformer(40));
-
+        compositePageTransformer.addTransformer(new MarginPageTransformer((int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,25,getResources().getDisplayMetrics())));
         //12.當滑動時會呼叫(1.page物件,2.滑動的位置)
         compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
             @Override
